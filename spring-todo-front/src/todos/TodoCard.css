@@ -1,0 +1,31 @@
+.card {
+  cursor: pointer;
+  width: 650px;
+  height: auto;
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 255, .2);
+  transition: all .2s;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  padding: 30px 30px 10px 30px;
+  position: relative;
+
+  margin: auto;
+ }
+ @media only screen and (max-width: 1200px) {
+  .card {
+   width: 650px;
+   height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .card {
+   width: 450px;
+   height: auto;
+  }
+}
+ .card:hover {
+  box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, .2);
+ }
+ 
+ 

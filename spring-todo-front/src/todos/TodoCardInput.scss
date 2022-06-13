@@ -1,0 +1,125 @@
+.add-todo {
+  width: 100%;
+  position: relative;
+  margin: 2rem 0;
+  &__btn {
+    text-align: center;
+    color: #fafafa;
+    line-height: 1;
+    position: absolute;
+    font-size: 150%;
+    right: 0;
+    top: 50%;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background: #2ecc71;
+    opacity: 0;
+    
+    transform: translate(0, -50%) scale(0) rotate(180deg);
+    transition: transform, opacity, 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    &:focus {
+      opacity: 1;
+      transform: translate(50%, -50%) scale(1.1) rotate(0deg);
+    }
+    &:active {
+      opacity: 1;
+      transition: transform, opacity, 0.1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+      transform: translate(50%, -50%) scale(0.95) rotate(0deg);
+      outline: none;
+    border: none;
+    }
+  }
+  &__input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background: #e8ebed;
+    margin: 0;
+    outline: 0;
+    border: 2px solid #e8ebed;
+    transition: background 0.25s ease-out;
+    animation: opAnimation 0.5s ease-out 0s;
+    animation-fill-mode:forwards;
+    &:focus {
+      background: none;
+    }
+  }
+  &__input:focus + &__btn {
+    opacity: 1;
+    transform: translate(50%, -50%) scale(1) rotate(0deg);
+  }
+}
+
+.add_title {
+  width: 40%;
+  position: relative;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background: #e8ebed;
+  margin: 0;
+  outline: 0;
+  border: 2px solid #e8ebed;
+  transition: background 0.25s ease-out;
+  animation: opAnimation 0.5s;
+  animation-fill-mode:forwards;
+  &:focus {
+	background: none;
+  }
+}
+.add_description{
+
+    width: 100%;
+    position: relative;
+    margin: 2rem 2rem 2rem 2rem;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background: #e8ebed;
+    margin: 0;
+    outline: 0;
+    border: 2px solid #e8ebed;
+    transition: background 0.25s ease-out;
+    animation: opAnimation 0.5s;
+    animation-fill-mode:forwards;
+    &:focus {
+    background: none;
+  
+    
+  }
+}
+
+.filters {
+  .filter__link {
+    margin: 0 1em;
+    font-size: 150%;
+  }
+  .fa-list-ul {
+    color: #3498db;
+  }
+  .fa-times {
+    color: #e74c3c;
+  }
+  .fa-check {
+    color: #2ecc71;
+  }
+  .filter__link i {
+    transition: transform 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
+
+@keyframes opAnimation{ 
+  0% {
+    opacity: 0;
+  }
+
+
+  100% {
+    opacity: 1;
+  }
+}

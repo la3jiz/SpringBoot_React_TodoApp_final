@@ -1,0 +1,26 @@
+.checklist_img{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    left: 10rem;
+    top: 4rem;
+    
+}
+.container{
+    position: relative;
+    top: 50px;
+}
+@media only screen and (max-width: 1400px) {
+    .checklist_img {
+  display: none;
+    }
+    #col{
+        display:none;
+    }
+    .container{
+        top:100px
+    }
+  }
