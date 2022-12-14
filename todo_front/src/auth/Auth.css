@@ -1,0 +1,117 @@
+/* From uiverse.io by @alexmaracinaru */
+.form_card {
+    width:auto;
+    height: auto;
+    background: #F4F6FB;
+    border: 1px solid white;
+    box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
+    -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
+    -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
+    padding: 25px; 
+    margin-top: 6rem;
+   
+}
+   
+  
+   .card_header {
+    display: flex;
+    align-items: center;
+   }
+   
+   .form_card svg {
+    color: #8ec3d7;
+    margin-bottom: 20px;
+    margin-right: 5px;
+   }
+   
+   .form_heading {
+    padding-bottom: 20px;
+    font-size: 21px;
+    color: #8ec3d7;
+   }
+   
+   .field {
+    padding-bottom: 10px;
+   }
+   
+   .form_input {
+    border-radius: 5px;
+    background-color: #e9e9f7;
+    padding: 5px;
+    width: 40rem;
+    border: 1px solid #dadaf7;
+   }
+   
+   .form_input:focus-visible {
+    outline: 1px solid #8cb8c9;
+   }
+   
+   .form_input::placeholder {
+    color: #bcbcdf;
+   }
+   
+   .form_label {
+    color: #B2BAC8;
+    font-size: 14px;
+    display: block;
+    padding-bottom: 4px;
+   }
+   
+   .auth_btn {
+    background-color: #8ec3d7;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px 17px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+   }
+   
+   .auth_btn:hover {
+    background-color: #7193a1;
+   }
+
+   .auth_img{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    left: 10rem;
+    top: 4rem;
+    
+}
+.container{
+    position: relative;
+    top: 50px;
+}
+@media only screen and (max-width: 1400px) {
+    .auth_img {
+  display: none;
+    }
+    #col{
+        display:none;
+    }
+    .container{
+        top:100px
+    }
+   
+  }
+@media only screen and (max-width: 900px) {
+
+    .form_input{
+        width: 30rem;
+       }
+  }
+
+  #fade_image{
+    animation: fadeIn 1s;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

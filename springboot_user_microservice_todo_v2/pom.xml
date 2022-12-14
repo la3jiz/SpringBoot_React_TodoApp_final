@@ -18,7 +18,7 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
+<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
@@ -26,33 +26,56 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-	<dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
-	<dependency>
-    	<groupId>org.springframework.boot</groupId>
-    	<artifactId>spring-boot-starter-security</artifactId>
-	</dependency>
-<!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
-<dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		
+        <dependency>
    			 <groupId>com.auth0</groupId>
   			 <artifactId>java-jwt</artifactId>
    			 <version>3.4.1</version>
 		</dependency>
 		
+		
+		<!-- this two dependencies are for returnin a json response  -->
+		<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+
+</dependency>
 <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-    </dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+</dependency>
+
 </dependencies>
 
 
